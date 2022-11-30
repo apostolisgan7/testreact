@@ -3,14 +3,16 @@ import React from "react";
 import HeroSection from "./components/HeroSection";
 import BoxSlider from "./components/BoxSlider";
 import './App.css';
+import Footer from "./components/Footer";
 
 
 function App() {
         return (
-            <div className={"app"} style={{overflow:"clip"}}>
+            <div className={"app"} style={{overflow:"clip", color:"#d9ccbb"}}>
         <Header/>
         <HeroSection/>
         <BoxSlider/>
+        <Footer/>
             </div>
     );
 }

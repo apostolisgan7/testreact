@@ -24,7 +24,7 @@ function HeroSection(props) {
             <Box w={"100%"}>
                 <Flex flexDirection={"column"} alignItems={"center"}>
                     <Box display={"block"} p={"5"} textAlign={"center"}>
-                        <Heading fontFamily={"DelaGothic"} pb={"5"} fontSize={"7vw"} color={"#d9ccbb"} >RUNNIN' THROUGH ME MEMORY LANE</Heading>
+                        <Heading fontFamily={"DelaGothic"} pb={"5"} fontSize={"7vw"}>RUNNIN' THROUGH ME MEMORY LANE</Heading>
                         <Text maxWidth={"50%"} m={"auto"} opacity={"0.7"} pb={"10"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus ornare nisi ac ullamcorper. In sit amet justo tellus. Donec auctor sit amet dolor.</Text>
                         {/*<Button letterSpacing={"2"}>GET STARTED</Button>*/}
                     </Box>
