@@ -25,6 +25,7 @@ function SiteMenu(props) {
                    PROJECTS
                 </MenuItem>
                 <MenuItem>
+
                   CONTACT
                 </MenuItem>
             </MenuList>
