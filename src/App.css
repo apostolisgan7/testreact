@@ -6,3 +6,68 @@
 .app{
     font-family:DelaGothic !important;
 }
+
+/* Specific features */
+.fragment {
+
+}
+
+.fragment::before {
+    animation: noise 9s steps(10) infinite;
+    background-image:url(https://static.tumblr.com/rxfwyqf/20Zlzzth8/noise.png);
+    content: '';
+    height: 500%;
+    left: -100%;
+    opacity: 0.5;
+    position: fixed;
+    top: -100%;
+    width: 500%;
+    z-index: -1;
+    mix-blend-mode: color-burn;
+}
+
+@keyframes noise {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    10% {
+        transform: translate(-3%, -6%);
+    }
+
+    20% {
+        transform: translate(-9%, 3%);
+    }
+
+    30% {
+        transform: translate(12%, -9%);
+    }
+
+    40% {
+        transform: translate(-15%, 12%);
+    }
+
+    50% {
+        transform: translate(-3%, -3%);
+    }
+
+    60% {
+        transform: translate(12%, 0%);
+    }
+
+    70% {
+        transform: translate(0%, 12%);
+    }
+
+    80% {
+        transform: translate(3%, 3%);
+    }
+
+    90% {
+        transform: translate(-15%, 15%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}

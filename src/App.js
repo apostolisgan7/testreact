@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 function App() {
         return (
-            <div className={"app"} style={{overflow:"clip", color:"#d9ccbb"}}>
+            <div className={"app fragment"} style={{overflow:"clip", color:"#d9ccbb"}}>
         <Header/>
         <HeroSection/>
         <BoxSlider/>
