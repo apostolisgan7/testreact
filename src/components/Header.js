@@ -3,6 +3,7 @@ import {Box, Heading, HStack} from "@chakra-ui/layout";
 import {Button} from "@chakra-ui/button";
 import {useColorMode} from "@chakra-ui/color-mode";
 import SiteMenu from "./SiteMenu";
+import {Link } from "react-router-dom"
 
 function Header(props) {
     const {colorMode, toggleColorMode} = useColorMode();
@@ -13,7 +14,7 @@ function Header(props) {
                     <SiteMenu/>
                 </Box>
                 <Box>
-                    <Heading size="md" textTransform={"uppercase"}  fontSize={"2xl"}> CRTV Studio.</Heading>
+                    <Link to="/"> <Heading size="md" textTransform={"uppercase"}  fontSize={"2xl"}> CRTV Studio.</Heading> </Link>
                 </Box>
                 <Box>
                     <Button size='sm' onClick={toggleColorMode}>

@@ -18,9 +18,12 @@ export default function App() {
             <Swiper
                 slidesPerView={3}
                 spaceBetween={30}
+                loop={true}
+                loopFillGroupWithBlank={true}
                 pagination={{
-                    clickable: true,
+                    clickable: true
                 }}
+                navigation={true}
                 modules={[Pagination]}
                 className="mySwiper"
             >

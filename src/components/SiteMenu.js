@@ -1,11 +1,13 @@
 import React from 'react';
 import {  Menu, MenuButton, MenuList, MenuItem, MenuItemOption, MenuGroup, MenuOptionGroup, MenuDivider } from '@chakra-ui/react';
-import {Flex} from "@chakra-ui/layout";
 import {IconButton} from "@chakra-ui/button";
 import { HamburgerIcon } from '@chakra-ui/icons'
+import {Link, Route, Routes} from "react-router-dom"
+
 
 function SiteMenu(props) {
     return (
+<>
         <Menu>
             <MenuButton
                 as={IconButton}
@@ -15,22 +17,12 @@ function SiteMenu(props) {
                 p={"1rem"}
             />
             <MenuList>
-                <MenuItem>
-                   FEEL THE THRIVE
-                </MenuItem>
-                <MenuItem>
-                    ABOUT
-                </MenuItem>
-                <MenuItem>
-                   PROJECTS
-                </MenuItem>
-                <MenuItem>
-
-                  CONTACT
-                </MenuItem>
+                <Link to="/about"><MenuItem>ABOUT</MenuItem></Link>
+                <Link to="/projects"><MenuItem>FEEL THE THRIVE</MenuItem></Link>
+                <Link to="/contact"><MenuItem>CONTACT</MenuItem></Link>
             </MenuList>
         </Menu>
-
+</>
     );
 }
 
