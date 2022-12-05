@@ -14,7 +14,7 @@ function Header(props) {
                     <SiteMenu/>
                 </Box>
                 <Box>
-                    <Link to="/"> <Heading size="md" textTransform={"uppercase"}  fontSize={"2xl"}> CRTV Studio.</Heading> </Link>
+                    <Link to="/"> <Heading size="md" fontFamily={"DelaGothic"} textTransform={"uppercase"}  fontSize={"2xl"}> CRTV Studio.</Heading> </Link>
                 </Box>
                 <Box>
                     <Button size='sm' onClick={toggleColorMode}>
