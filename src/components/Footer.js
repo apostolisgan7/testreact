@@ -4,10 +4,10 @@ import {Box, Flex, Heading} from "@chakra-ui/layout";
 
 function Footer(props) {
     return (
-        <Box  m={"6rem auto"}>
+        <Box m={"6rem auto"}>
             <Box>
-                <Heading fontSize={"4vw"} fontFamily={"DelaGothic"} textAlign={"center"} mt={"50"} mb={"50"}
-                         color={"#d9ccbb"}>CRTV STUDIO.</Heading>
+                <Heading fontSize={"4vw"} fontFamily={"DelaGothic"} textAlign={"center"} mt={"50"} mb={"50"}>CRTV
+                    STUDIO.</Heading>
             </Box>
             <Box maxWidth={"1000px"} m={"0rem auto"}>
                 <OrderedList m={"0"} listStyleType={"none"}>

@@ -1,28 +1,28 @@
-import React from 'react';
-import {  Menu, MenuButton, MenuList, MenuItem, MenuItemOption, MenuGroup, MenuOptionGroup, MenuDivider } from '@chakra-ui/react';
-import {IconButton} from "@chakra-ui/button";
-import { HamburgerIcon } from '@chakra-ui/icons'
-import {Link, Route, Routes} from "react-router-dom"
+import React,{ useState } from 'react';
+import {Link} from "react-router-dom";
+import {Box, VStack} from "@chakra-ui/layout";
+import {Button} from "@chakra-ui/button";
 
 
-function SiteMenu(props) {
+function SiteMenu() {
+    const [isShown, setIsShown] = useState(true);
+    const handleClick = (event) => {
+        setIsShown(current => !current);
+    };
     return (
-<>
-        <Menu>
-            <MenuButton
-                as={IconButton}
-                aria-label='Options'
-                icon={<HamburgerIcon />}
-                fontSize={"3rem"}
-                p={"1rem"}
-            />
-            <MenuList>
-                <Link to="/about"><MenuItem>ABOUT</MenuItem></Link>
-                <Link to="/projects"><MenuItem>FEEL THE THRIVE</MenuItem></Link>
-                <Link to="/contact"><MenuItem>CONTACT</MenuItem></Link>
-            </MenuList>
-        </Menu>
-</>
+        <>
+            <Box>
+                <Button onClick={handleClick}  position={"relative"} zIndex={"2"}>MENU</Button>
+                <Box className={"menu_wrapper"} style={{display: isShown ? 'none' : 'flex'}} position={"fixed"} bg={"#000308"} top={"0"} left={"0"} right={"0"} bottom={"0"} height={"100vh"}
+                justifyContent={"center"} alignItems={"center"} zIndex={"1"}>
+                    <VStack className={"menu_inner"} fontSize={"3rem"}>
+                        <Link onClick={handleClick} to="/about">ABOUT</Link>
+                        <Link onClick={handleClick} to="/projects">FEEL THE THRIVE</Link>
+                        <Link onClick={handleClick} to="/contact">CONTACT</Link>
+                    </VStack>
+                </Box>
+            </Box>
+        </>
     );
 }
 

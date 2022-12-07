@@ -2,11 +2,14 @@ import React from 'react';
 import {Box, Flex, Heading} from "@chakra-ui/layout";
 import {Image, Text} from '@chakra-ui/react'
 import gsap from "gsap";
+import {useColorMode, useColorModeValue} from "@chakra-ui/color-mode";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin( ScrollTrigger);
 const { useEffect, useRef } = React;
 
 function HeroSection(props) {
+
+
     const el = useRef();
     useEffect(() => {
         gsap.to(".image_hero", {

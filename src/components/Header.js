@@ -16,7 +16,7 @@ function Header(props) {
                 <Box>
                     <Link to="/"> <Heading size="md" fontFamily={"DelaGothic"} textTransform={"uppercase"}  fontSize={"2xl"}> CRTV Studio.</Heading> </Link>
                 </Box>
-                <Box>
+                <Box  position={"relative"} zIndex={"2"}>
                     <Button size='sm' onClick={toggleColorMode}>
                         Toggle Mode
                     </Button>

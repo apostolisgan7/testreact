@@ -8,13 +8,15 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import {AnimatePresence} from "framer-motion";
+import {useColorMode, useColorModeValue} from "@chakra-ui/color-mode";
 
 
 function App() {
     const location = useLocation();
-
+    const { toggleColorMode } = useColorMode();
+    const color = useColorModeValue('#420099', '#d9ccbb');
         return (
-            <div className={"app fragment"} style={{overflow:"clip", color:"#d9ccbb"}}>
+            <div className={"app fragment"} style={{overflow:"clip", color:color}}>
         <Header/>
         <AnimatePresence exitBeforeEnter>
                 <Routes key={location.pathname} location={location}>

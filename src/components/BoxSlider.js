@@ -13,7 +13,7 @@ import { Pagination } from "swiper";
 export default function App() {
     return (
         <>
-            <Heading textShadow={"10px 12px 3px #ffffff1f"} fontFamily={"DelaGothic"} textAlign={"center"} mt={"100"} color={"#d9ccbb"}>THRIVE MOMENTS</Heading>
+            <Heading textShadow={"10px 12px 3px #ffffff1f"} fontFamily={"DelaGothic"} textAlign={"center"} mt={"100"}>THRIVE MOMENTS</Heading>
             <Box mt={"50"} mb={"0"} pb={"70"} style={{transform:"rotate(-2deg)"}}>
             <Swiper
                 slidesPerView={3}
@@ -36,7 +36,7 @@ export default function App() {
             </Swiper>
             </Box>
             <Box p={"10"} mt={"20"}>
-            <Heading textShadow={"10px 12px 3px #ffffff1f"} fontFamily={"DelaGothic"} textAlign={"left"} mt={"0"} mb={"10"} color={"#d9ccbb"}>SEE THE WORLD THROUGH OUR REARVIEW</Heading>
+            <Heading textShadow={"10px 12px 3px #ffffff1f"} fontFamily={"DelaGothic"} textAlign={"left"} mt={"0"} mb={"10"}>SEE THE WORLD THROUGH OUR REARVIEW</Heading>
             <Text columnCount={"2"} fontSize={"16px"} style={{columnCount:"2", lineHeight:"30px"}} opacity={"0.7"}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam risus eros, viverra et elementum vitae, euismod id ante. Suspendisse pellentesque porttitor magna quis commodo. Aenean tincidunt nulla sed faucibus cursus. Etiam finibus nunc ac nibh faucibus laoreet. Donec lobortis felis justo, et ultricies diam consectetur at. Suspendisse molestie auctor sapien quis congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam risus eros, viverra et elementum vitae, euismod id ante. Suspendisse pellentesque porttitor magna quis commodo. Aenean tincidunt nulla sed faucibus cursus. Etiam finibus nunc ac nibh faucibus laoreet. Donec lobortis felis justo, et ultricies diam consectetur at. Suspendisse molestie auctor sapien quis congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
